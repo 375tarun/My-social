@@ -23,7 +23,7 @@ const app = express();
 const PORT = process.env.PORT || 5000;
 const __dirname = path.resolve();
 
-app.use(cors());
+app.use(cors({origin:"https://socailimpact.netlify.app",credentials:true}));
 
 app.use(express.json({ limit: "5mb" })); 
 
