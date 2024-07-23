@@ -23,7 +23,7 @@ const app = express();
 const PORT = process.env.PORT || 5000;
 const __dirname = path.resolve();
 
-app.use(cors({origin:"https://socialimpact.netlify.app",credentials:true}));
+app.use(cors({origin:"https://socialimpact.netlify.app"}));
 
 app.use(express.json({ limit: "5mb" })); 
 
